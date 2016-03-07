@@ -17,7 +17,6 @@ class SearchPage extends Component {
   render() {
     return(
       <View style={styles.container}>
-
         <Text style={styles.description}>
           Search for houses to buy
         </Text>
@@ -40,7 +39,6 @@ class SearchPage extends Component {
           <Text style={styles.buttonText}>Location</Text>
         </TouchableHighlight>
         <Image source={require('image!house')} style={styles.image}/>
-
       </View>
     )
   }
@@ -94,8 +92,7 @@ var styles = StyleSheet.create({
     borderColor: '#48BBEC',
     borderRadius: 8,
     color: '#48BBEC'
-  }
+  },
 });
-
 
 module.exports = SearchPage;
