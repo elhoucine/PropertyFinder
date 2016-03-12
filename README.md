@@ -13,4 +13,5 @@ Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-reac
 - [ ] Play with animations.
 - [ ] Testing ?
 - [ ] Init a simple android version.
-- [ ] Experiments: Interact with native IOS code.
+- [ ] Experiments: Doing OCR.
+- [ ] Experiments: Trying to mixin with Storyboards.
