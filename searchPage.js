@@ -22,13 +22,10 @@ class SearchPage extends Component {
   }
 
   onSearchTextChanges(event) {
-    console.log('onSearchTextChanges');
     this.setState({ searchString: event.nativeEvent.text });
-    console.log(this.state.searchString);
   }
 
   render() {
-    console.log('SearchPage.render');
     return(
       <View style={styles.container}>
 
