@@ -22,10 +22,15 @@ class SearchPage extends Component {
   }
 
   onSearchTextChanges(event) {
-    this.setState({ searchString: event.nativeEvent.text });
+    this.setState({
+      searchString: event.nativeEvent.text,
+      isLoading: false,
+    });
   }
 
   render() {
+    var spinner = this.state.isLoading ? (<ActivityIndicatorIOS hidden='true' size='large'/>) : (<View/>);
+
     return(
       <View style={styles.container}>
 
@@ -53,6 +58,7 @@ class SearchPage extends Component {
           <Text style={styles.buttonText}>Location</Text>
         </TouchableHighlight>
         <Image source={require('image!house')} style={styles.image}/>
+        {spinner}
 
       </View>
     )
