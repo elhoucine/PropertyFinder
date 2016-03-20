@@ -14,17 +14,6 @@ import React, {
 
 var SearchPage = require('./searchPage.js');
 
-
-class HelloWorld extends Component {
-  render() {
-    return (
-      <View>
-        <Text style={styles.text}>Hello you man oho graaap!</Text>
-      </View>
-    )
-  }
-}
-
 class PropertyFinderApp extends Component {
   render() {
     return (
@@ -50,6 +39,5 @@ var styles = StyleSheet.create({
     flex: 1,
   }
 });
-
 
 AppRegistry.registerComponent('PropertyFinder', ()=> PropertyFinderApp);
