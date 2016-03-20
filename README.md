@@ -3,6 +3,8 @@ Building an IOS application with React-native.
 
 Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-react-native-building-apps-javascript)
 
+![property finder](http://g.recordit.co/75mfdGRkTA.gif)
+
 #### TODO:
 - [x] Init project & Adding Navigation (Navigator).
 - [ ] Doing Search.
