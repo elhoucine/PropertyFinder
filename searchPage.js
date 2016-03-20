@@ -13,11 +13,36 @@ import React, {
   Component,
 } from 'react-native';
 
+/**
+*
+*/
+function urlForQueryAndPage(key, value, pageNumber) {
+  var data = {
+      country: 'uk',
+      pretty: '1',
+      encoding: 'json',
+      listing_type: 'buy',
+      action: 'search_listings',
+      page: pageNumber
+  };
+  data[key] = value;
+
+  var querystring = Object.keys(data)
+    .map(key => key + '=' + encodeURIComponent(data[key]))
+    .join('&');
+
+  return 'http://api.nestoria.co.uk/api?' + querystring;
+};
+
+
+/**
+*
+*/
 class SearchPage extends Component {
   constructor(props) {
       super(props);
       this.state = {
-        searchString: 'casablanca',
+        searchString: 'london',
       };
   }
 
@@ -26,6 +51,16 @@ class SearchPage extends Component {
       searchString: event.nativeEvent.text,
       isLoading: false,
     });
+  }
+
+  _executeQuery(query) {
+    console.log(query);
+    this.setState({ isLoading: true });
+  }
+
+  onSearchPressed(event) {
+    var query = urlForQueryAndPage('place_name', this.state.searchString, 1);
+    this._executeQuery(query);
   }
 
   render() {
@@ -48,7 +83,8 @@ class SearchPage extends Component {
             onChange={this.onSearchTextChanges.bind(this)}
             placeholder='Search via name or postcode'/>
           <TouchableHighlight style={styles.button}
-              underlayColor='#99d9f4'>
+            underlayColor='#99d9f4'
+            onPress={this.onSearchPressed.bind(this)}>
             <Text style={styles.buttonText}>Go</Text>
           </TouchableHighlight>
         </View>
