@@ -50,6 +50,7 @@ class SearchPage extends Component {
     this.setState({
       searchString: event.nativeEvent.text,
       isLoading: false,
+      message: '',
     });
   }
 
@@ -95,6 +96,8 @@ class SearchPage extends Component {
         </TouchableHighlight>
         <Image source={require('image!house')} style={styles.image}/>
         {spinner}
+
+        <Text style={styles.message}>{this.state.message}</Text>
 
       </View>
     )
