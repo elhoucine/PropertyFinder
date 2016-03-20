@@ -7,7 +7,7 @@ Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-reac
 
 #### TODO:
 - [x] Init project & Adding Navigation (Navigator).
-- [ ] Doing Search.
+- [x] Doing Search.
 - [ ] Interacting with an Api.
 - [ ] Playing with geolocation.
 - [ ] Playing with camera.
