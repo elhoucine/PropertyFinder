@@ -13,6 +13,8 @@ import React, {
   Component,
 } from 'react-native';
 
+var SearchResults = require('./searchResults.js');
+
 /**
 *
 */
@@ -75,8 +77,11 @@ class SearchPage extends Component {
     });
 
     if( response.application_response_code.substr(0, 1)=== '1' ){
-      this.setState({
-        message: 'Properties found: ' + response.listings.length,
+      console.log(response.listings.length);
+      this.props.navigator.push({
+        title: 'Results',
+        component: SearchResults,
+        passProps: {listings: response.listings}
       });
     }
     else {
