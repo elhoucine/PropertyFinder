@@ -29,19 +29,19 @@ class SearchResults extends Component {
   renderRow(rowData, sectionID, rowID) {
     return (
       <TouchableHighlight underlayColor="#ddd">
-      <View>
-        <Text>{rowData.title}</Text>
-      </View>
-    )
+        <View>
+          <Text>{rowData.title}</Text>
+        </View>
+      </TouchableHighlight>
+    );
   }
 
   render() {
-    return(
+    return (
       <ListView
-        dataSource={this.dataSource}
-        renderRow={this.renderRow.bind(this)}
-      </ListView>
-    )
+        dataSource={this.state.dataSource}
+        renderRow={this.renderRow.bind(this)}/>
+    );
   }
 }
 
