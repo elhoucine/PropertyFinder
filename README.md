@@ -5,6 +5,16 @@ Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-reac
 
 ![property finder](http://g.recordit.co/GvPd9aiAtt.gif)
 
+## Run the app (IOS):
+
+1- Clone this repo:
+
+``
+git clone https://github.com/elhoucine/PropertyFinder.git
+``
+
+2- Open `PropertyFinder/ios/PropertyFinder.xcodeproj` in your xCode.
+
 #### TODO:
 - [x] Init project & Adding Navigation (Navigator).
 - [x] Performing Search.
