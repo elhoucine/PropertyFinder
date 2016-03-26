@@ -13,7 +13,12 @@ Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-reac
 git clone https://github.com/elhoucine/PropertyFinder.git
 ``
 
-2- Open `PropertyFinder/ios/PropertyFinder.xcodeproj` in your xCode.
+2- Install dependencies:
+``
+cd PropertyFinder && npm install
+``
+
+3- Open the `.xcodeproj` file inside `/ios` and hit Run in Xcode.
 
 #### TODO:
 - [x] Init project & Adding Navigation (Navigator).
