@@ -26,11 +26,24 @@ class SearchResults extends Component {
     };
   }
 
+  rowPressed(propertyGuid) {
+    var property = this.props.listings.filter(prop => prop.guid === propertyGuid)[0];
+  }
+
   renderRow(rowData, sectionID, rowID) {
+    var price = rowData.price_formatted.split(' ')[0];
+
     return (
-      <TouchableHighlight underlayColor="#ddd">
+      <TouchableHighlight onPress={()=> this.rowPressed(rowData.guid)} underlayColor="#ddd">
         <View>
-          <Text>{rowData.title}</Text>
+          <View style={styles.rowContainer}>
+            <Image style={styles.thumb} source={{uri: rowData.img_url }} />
+              <View style={styles.textContainer}>
+                <Text style={styles.price}>£{price}</Text>
+                <Text style={styles.title} numberOfLines={1}>{rowData.title}</Text>
+              </View>
+          </View>
+          <View style={styles.separator}/>
         </View>
       </TouchableHighlight>
     );
