@@ -3,7 +3,7 @@ Building an IOS application with React-native.
 
 Inspired by this [Tutorial](https://www.raywenderlich.com/99473/introducing-react-native-building-apps-javascript)
 
-![property finder](http://g.recordit.co/GvPd9aiAtt.gif)
+![property finder](http://g.recordit.co/yHMCyIYsoA.gif)
 
 ## Run the app (IOS):
 
