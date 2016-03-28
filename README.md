@@ -31,5 +31,3 @@ cd PropertyFinder && npm install
 - [ ] Play with animations.
 - [ ] Testing ?
 - [ ] Init a simple android version.
-- [ ] Experiments: Doing OCR.
-- [ ] Experiments: Trying to mixin with Storyboards.
