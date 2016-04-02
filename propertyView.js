@@ -5,7 +5,7 @@ import React, {
   View,
   Text,
   Component,
-} from 'react-nativ';
+} from 'react-native';
 
 
 class PropertyView extends Component {

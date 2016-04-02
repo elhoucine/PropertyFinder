@@ -13,6 +13,8 @@ import React, {
   Component,
 } from 'react-native';
 
+var PropertyView = require('./propertyView.js');
+
 class SearchResults extends Component {
   constructor(props) {
     super(props);
