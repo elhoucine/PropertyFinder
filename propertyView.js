@@ -1,3 +1,7 @@
+/**
+* PropertyView: for displaying each result.
+*/
+
 'use strict';
 import React, {
   StyleSheet,
