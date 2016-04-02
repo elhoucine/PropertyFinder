@@ -24,7 +24,7 @@ cd PropertyFinder && npm install
 - [x] Init project & Adding Navigation (Navigator).
 - [x] Performing Search.
 - [x] Interacting with an Api.
-- [ ] List and detail view.
+- [x] List and detail view.
 - [ ] Playing with geolocation.
 - [ ] Playing with camera.
 - [ ] Push notification.
