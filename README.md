@@ -26,9 +26,8 @@ cd PropertyFinder && npm install
 - [x] Interacting with an Api.
 - [x] List and detail view.
 - [ ] Image slides.
-- [ ] Playing with geolocation.
-- [ ] Playing with camera.
+- [ ] Geolocation.
+- [ ] Camera.
 - [ ] Push notification.
-- [ ] Play with animations.
 - [ ] Testing ?
-- [ ] Init a simple android version.
+- [ ] Android version.
