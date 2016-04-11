@@ -26,7 +26,7 @@ cd PropertyFinder && npm install
 - [x] Interacting with an Api.
 - [x] List and detail view.
 - [ ] Image slides.
-- [ ] Geolocation.
+- [x] Geolocation.
 - [ ] Camera.
 - [ ] Push notification.
 - [ ] Testing ?
